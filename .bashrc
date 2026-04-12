@@ -47,3 +47,7 @@ alias configedit='vim ~/.config/i3/config'
 alias v='vim'
 
 PS1='\n\e[38;2;255;236;192m[\u] \e[38;2;255;194;155m-> \e[38;2;243;159;159m[\w]\e[0m\n-> ' 
+
+export SUDO_EDITOR='/usr/bin/vim'
+export VISUAL='/usr/bin/vim'
+export EDITOR='/usr/bin/vim'

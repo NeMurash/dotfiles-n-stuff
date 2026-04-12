@@ -5,7 +5,4 @@
 - fzf
 
 ## The font I use in the terminal
-https://github.com/be5invis/Iosevka
-
-## The theme I use for vim
-https://github.com/tomasr/molokai
+https://terminus-font.sourceforge.net/
