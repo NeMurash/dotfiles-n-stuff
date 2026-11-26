@@ -1,0 +1,63 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 12,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "custom/separator", "custom/network", "custom/separator", "wireplumber", "custom/separator", "battery", "custom/separator", "custom/game-over"],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true
+  },
+
+  "custom/network": {
+    "format": "󰒢",
+    "on-click": "kitty fish -c \"nmtui\""
+  },
+
+  "custom/separator": {
+    "format": "||"
+  },
+
+  "custom/game-over": {
+    "format": "󰐥",
+    "on-click": "fish ~/misc/functions/power_menu.fish"
+  },
+
+  "clock": {
+    "format": "{:%r}",
+    "tooltip-format": "{:%A, %d %B %Y}",
+    "interval": 1
+  },
+
+  "wireplumber": {
+    "format": "   {volume}%",
+    "on-click": "pavucontrol",
+    "on-scroll-up": "amixer set Master 5%+",
+    "on-scroll-down": "amixer set Master 5%-"
+  },
+
+  "network": {
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "󰈀  Connected",
+    "format-disconnected": "  Offline"
+  },
+
+  "battery": {
+    "format": "󰁹 {capacity}%"
+  },
+
+  "cpu": {
+    "format": "  {usage}%"
+  },
+
+  "memory": {
+    "format": "  {used}MB"
+  },
+
+  "tray": {
+    "spacing": 10
+  }
+}
